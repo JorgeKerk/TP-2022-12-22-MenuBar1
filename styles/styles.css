@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --colorMain: rgb(124, 103, 202);
+    --scaleExp: 1.2;
+    --timeTransition: 0.2s;
+}
 *{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
@@ -28,11 +37,9 @@ body, #divIdMenuBarContainer{
 
 #imgIdLogo{
     width: 90px;
-    /* margin-left: 8%; */
 }
 
 nav {
-    /* background-color: chocolate; */
     width: 80%;
     height: 100%;
     display: flex;
@@ -40,32 +47,66 @@ nav {
     justify-content: space-between;
 
 }
+
 nav a {
+    position: relative;
     text-decoration: none;
     color: black;
     font-weight: 600;
-    margin-left: 3%;
+    margin-left: 4%;
+    transition: var(--timeTransition) ease-in;
+}
+
+nav hr{
+    position: absolute;
+    border: none;
+    height: 3px;
+    background-color: var(--colorMain);
+    width: 0%;
+    transition: var(--timeTransition) ease-in;
+}
+
+.aClassMovLeft:hover hr{
+    width: 100%;
+}
+
+.aClassMovCenter hr{
+    left: 50%;
+}
+
+.aClassMovCenter:hover hr{
+    left: 0%;
+    width: 100%;
+}
+
+.aClassMovRight hr{
+    left: 100%;
+}
+
+.aClassMovRight:hover hr{
+    left: 0%;
+    width: 100%;
 }
 
 #divIdSearch{
     margin-left: 12%;
     height: 55%;
-    width: 20%;
-    /* background-color: blueviolet; */
+    width: 60%;
     display:flex;
     align-items: center;
-    /* justify-content: space-between; */
     border: 2px solid rgba(0,0,0,0.1);
     border-radius: 50px;
+    transition: var(--timeTransition) ease-in;
 }
 
 #divIdSearch i{
     color: rgba(0,0,0,0.5);
     margin-left: 15px;
+    transition: var(--timeTransition) ease-in;
 }
 
 #divIdSearch input[type=search]{
-    width: 70%;
+    width: 75%;
     margin-left: 8px;
     border: none;
     outline: none;
@@ -76,31 +117,37 @@ input[type=search]::placeholder {
      font-weight: bold; 
 }
 
-#divIdSearch:hover i, nav a:hover{
-    color: orange;
-    transform: scale(1.3);
+.expand:hover, #divIdSearch:hover i{
+    transform: scale(var(--scaleExp));
 }
 
 #divIdSearch:hover{
-    border-color: orange;
+    border-color: var(--colorMain);
 }
 
 #divIdGlob{
     margin-left: 2.5%;
 }
 
+#divIdGlob:hover, 
+#divIdContAlarm:hover a,
+#divIdSearch:hover i {
+    color: var(--colorMain);
+    text-shadow: 1px 1px 5px var(--colorMain);
+}
+
 #divIdContAlarm{
     margin-left: 1.5%;
     width: 2%;
     height: 50%;
-    /* background-color: aquamarine; */
     position: relative;
+    transition: var(--timeTransition) ease-in;
 }
 
 #divIdCircle{
     position:absolute;
-    top:0;
-    left: 50%;
+    top:2px;
+    left: 160%;
     border-radius: 50px;
     height: 6px;
     width: 6px;
@@ -113,25 +160,15 @@ input[type=search]::placeholder {
     top: 8px;
 }
 
-#divIdContAlarm:hover #divIdCircle{
-    transform: scale(1.3);
-    top: -3px;
-}
-
-#divIdContAlarm:hover a{
-    transform: scale(1.3);
-    color: orange;
-}
-
 #imgImgUsr{
-    width: 3.5%;
-    object-fit:contain;
-    margin-left: 1.5%;
+    width: 100%;
+    /* margin-left: 1.5%; */
     border-radius: 70px;
+    transition: var(--timeTransition) ease-in;
+    border: 2px solid white;
 }
 
 #imgImgUsr:hover{
-    transform: scale(1.3);
-    border: 2px solid orange;
-
+    transform: scale(var(--scaleExp));
+    border: 2px solid var(--colorMain);
 }
