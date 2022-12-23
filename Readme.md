@@ -21,7 +21,7 @@ Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declara
 El resto de las variables se recomienda no actualizarlas para no estropear el diseño de la barra de menú.
 <br>
 
-Link para poder ver el resultado del código en este repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/" target="_blank">**Barra de Menú I**</a>
+Link para poder ver el resultado del código en este repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/">**Barra de Menú I**</a>
 
 <hr>
 
