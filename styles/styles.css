@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
+    --colorFont: black;
     --colorMain: rgb(124, 103, 202);
+    --colorSecond: white;
+    --colorBkg: rgb(245, 249, 252);
+    --colorCircle: red;
+    --colorPHoldSearch: rgba(0, 0, 0, 0.4);
+    --imgUsr: url("../images/imgUsr.png");
     --scaleExp: 1.2;
     --timeTransition: 0.2s;
 }
+
 *{
+    color: var(--colorFont);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0;
@@ -14,7 +22,7 @@
 
 #divIdMenuBarContainer{
     margin-top: 2.5vh;
-    background-color: rgb(245, 249, 252);
+    background-color: var(--colorBkg);
     height: 95vh;
     width: 95%;
     border-radius: 6px;
@@ -31,7 +39,7 @@ body, #divIdMenuBarContainer{
     width: 82%;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: var(--colorSecond);
     justify-content: center;
 }
 
@@ -45,13 +53,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 nav a {
     position: relative;
     text-decoration: none;
-    color: black;
+    color: var(--colorFont);
     font-weight: 600;
     margin-left: 4%;
     transition: var(--timeTransition) ease-in;
@@ -100,7 +107,7 @@ nav hr{
 }
 
 #divIdSearch i{
-    color: rgba(0,0,0,0.5);
+    color: var(--colorPHoldSearch);
     margin-left: 15px;
     transition: var(--timeTransition) ease-in;
 }
@@ -113,7 +120,7 @@ nav hr{
 }
 
 input[type=search]::placeholder {
-     color: rgba(0,0,0,0.4); 
+     color: var(--colorPHoldSearch); 
      font-weight: bold; 
 }
 
@@ -152,7 +159,7 @@ input[type=search]::placeholder {
     height: 6px;
     width: 6px;
     border: none;
-    background-color: red;
+    background-color: var(--colorCircle);
 }
 
 #divIdContAlarm a{
@@ -160,12 +167,22 @@ input[type=search]::placeholder {
     top: 8px;
 }
 
+#aImgImgUsr{
+    height: 50%;
+    width: 10%;
+}
+
 #imgImgUsr{
-    width: 100%;
-    /* margin-left: 1.5%; */
-    border-radius: 70px;
+    width: 30px;
+    height: 30px;
+    background-image: var(--imgUsr);
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius: 50px;
+    object-fit:scale-down;
     transition: var(--timeTransition) ease-in;
-    border: 2px solid white;
+    border: 2px solid var(--colorSecond);
 }
 
 #imgImgUsr:hover{
