@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">😊 BIENVENIDO A MI MENÚ BAR I 😊</h1>
+<h1 align="center">😊 BIENVENIDO A MI MENÚ BAR I 😊</h1>
 
 <h2>Descripcion</h2>
 
