@@ -1,6 +1,6 @@
 <h1 align="center">😊 BIENVENIDO A MI MENÚ BAR I 😊</h1>
 
-<h2>Descripcion</h2>
+<h2>Descripción</h2>
 
 Esta es una barra de menú solo con **HTML** y estilos **CSS** 
 
@@ -8,7 +8,7 @@ Esta es una barra de menú solo con **HTML** y estilos **CSS**
 
 Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declaradas en el archivo styles.css pra cambiar a su necesidad el color y las imágenes de la barra de menú.
 
-<i>Variables que puede cambiar en el CSS para dar estilo a su barra de menú</i>
+<u><i>Variables que puede cambiar en el CSS para dar estilo a su barra de menú</i></u>
 <ul>
     <li><strong>--colorFont:</strong> Color de todas las fuentes de la barra de menú.</li>
     <li><strong>--colorMain:</strong> Color de los efectos en la barra de menú..</li>
