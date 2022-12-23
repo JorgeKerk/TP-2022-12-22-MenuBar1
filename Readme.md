@@ -1,4 +1,4 @@
-<h1> BIENVENIDO A MENÚ BAR I 😊</h1>
+<h1 style="text-align: center;">😊 BIENVENIDO A MI MENÚ BAR I 😊</h1>
 
 <h2>Descripcion</h2>
 
@@ -6,7 +6,7 @@ Esta es una barra de menú solo con **HTML** y estilos **CSS**
 
 ![Alt text](images/MenuBarExample.png)
 
-Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declaradas en el archivo styles.css pra cambiar asu necesidad el color y las imágenes de la barra de menú.
+Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declaradas en el archivo styles.css pra cambiar a su necesidad el color y las imágenes de la barra de menú.
 
 <i>Variables que puede cambiar en el CSS para dar estilo a su barra de menú</i>
 <ul>
@@ -21,7 +21,8 @@ Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declara
 El resto de las variables se recomienda no actualizarlas para no estropear el diseño de la barra de menú.
 <br>
 
-Link para poder ver el resultado del código en este repositorio: <a class="aClassMovLeft expand" href="">**Barra de Menú I**</a>
+Link para poder ver el resultado del código en este repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/" target="_blank">**Barra de Menú I**</a>
 
 <hr>
+
 Espero que sea de su agrado, saludos cordiales <i>**JORGE KERK**</i>.
