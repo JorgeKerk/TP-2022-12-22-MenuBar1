@@ -23,13 +23,10 @@ Ademas de poder descargar este repositorio y modificar el codigo para obtener el
 
 El resto de las variables se recomienda no actualizarlas para no estropear el diseño de la barra de menú.
 
-<br>
-
 <h2>Link</h2> 
 
 Acceso directo a la página web del repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/">**Barra de Menú I**</a>
 
-<br>
 <hr>
 
 Espero que sea de su agrado, saludos cordiales, <i>**JORGE KERK**</i>.
