@@ -1,6 +1,9 @@
+/* Fuente de la barra de menú */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Variables CSS */
 :root{
+    /* Personalizan la barra de menú */
     --colorFont: black;
     --colorMain: rgb(124, 103, 202);
     --colorSecond: white;
@@ -8,10 +11,12 @@
     --colorCircle: red;
     --colorPHoldSearch: rgba(0, 0, 0, 0.4);
     --imgUsr: url("../images/imgUsr.png");
+    /* variables para la animación y transición */
     --scaleExp: 1.2;
     --timeTransition: 0.2s;
 }
 
+/* Configuraciones iniciales */
 *{
     color: var(--colorFont);
     font-family: 'Roboto', sans-serif;
@@ -20,6 +25,7 @@
     padding: 0;
 }
 
+/* CXonfiguracion del contenedor de la barra de menú */
 #divIdMenuBarContainer{
     margin-top: 2.5vh;
     background-color: var(--colorBkg);
@@ -28,12 +34,14 @@
     border-radius: 6px;
 }
 
+/* Se aplica flexbox para centrar tanto el contenido del body como el contenedor de la barra de menú */
 body, #divIdMenuBarContainer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Crea los limites de la barra de menú y hace que su único elemento (nav) se centre */
 #divIdMenuBarI{
     height: 4.2em;
     width: 82%;
@@ -43,10 +51,12 @@ body, #divIdMenuBarContainer{
     justify-content: center;
 }
 
+/* delimita el ancho del logo para que no desborde de la barra de menú */
 #imgIdLogo{
     width: 90px;
 }
 
+/* Crea los limites del nav contenedor de los elementos de la barra de menú y hace que el espaciado entre ellos sean iguales */
 nav {
     width: 80%;
     height: 100%;
@@ -55,6 +65,7 @@ nav {
     justify-content: space-between;
 }
 
+/* Dá formato a todas las estiquetas 'a' dentro del nav */
 nav a {
     position: relative;
     text-decoration: none;
@@ -64,6 +75,7 @@ nav a {
     transition: var(--timeTransition) ease-in;
 }
 
+/* Dá formato a todas las estiquetas 'hr' dentro del nav que representan las barras de animacion de cada elemento/item de la barra de menú */
 nav hr{
     position: absolute;
     border: none;
@@ -73,28 +85,29 @@ nav hr{
     transition: var(--timeTransition) ease-in;
 }
 
+/* los elementos que tengan esta clase crecerán de su porcentaje inicial a 100% de izquierda a derecha */
 .aClassMovLeft:hover hr{
     width: 100%;
 }
 
+/* los elementos que tengan esta clase se correrán el 50% de izquierda a derecha */
 .aClassMovCenter hr{
     left: 50%;
 }
 
-.aClassMovCenter:hover hr{
-    left: 0%;
-    width: 100%;
-}
-
+/* los elementos que tengan esta clase se correrán el 100% de izquierda a derecha */
 .aClassMovRight hr{
     left: 100%;
 }
 
-.aClassMovRight:hover hr{
+/* los elementos que tengan esta clase crecerán de su porcentaje inicial al 100% y se moveran de su posicion actual a 0% a la izquierda */
+.aClassMovCenter:hover hr,
+.aClassMovRight:hover hr {
     left: 0%;
     width: 100%;
 }
 
+/* Configura la caja de búsqueda */
 #divIdSearch{
     margin-left: 12%;
     height: 55%;
@@ -106,12 +119,14 @@ nav hr{
     transition: var(--timeTransition) ease-in;
 }
 
+/* Configura el ícono de Búsqueda */
 #divIdSearch i{
     color: var(--colorPHoldSearch);
     margin-left: 15px;
     transition: var(--timeTransition) ease-in;
 }
 
+/* Configura la caja de texto de búsqueda */
 #divIdSearch input[type=search]{
     width: 75%;
     margin-left: 8px;
@@ -119,23 +134,28 @@ nav hr{
     outline: none;
 }
 
+/* Cambia la configuracion del texto del PlaceHolder de la caja de texto de búsqueda */
 input[type=search]::placeholder {
      color: var(--colorPHoldSearch); 
      font-weight: bold; 
 }
 
+/* Animación de expansión para todos los elementos que contengan la clase 'expand' y para la caja de búsqueda */
 .expand:hover, #divIdSearch:hover i{
     transform: scale(var(--scaleExp));
 }
 
+/* Cambia el color de la caja de texto de búsqueda cuando pasa el mouse por encima */
 #divIdSearch:hover{
     border-color: var(--colorMain);
 }
 
+/* configura el margen izquierdo del icono de mensajes */
 #divIdGlob{
     margin-left: 2.5%;
 }
 
+/* Cambia color y sombra del texto en los iconos y en la caja de texto de búsqueda */
 #divIdGlob:hover, 
 #divIdContAlarm:hover a,
 #divIdSearch:hover i {
@@ -143,6 +163,7 @@ input[type=search]::placeholder {
     text-shadow: 1px 1px 5px var(--colorMain);
 }
 
+/* Configura el icono de alarmas */
 #divIdContAlarm{
     margin-left: 1.5%;
     width: 2%;
@@ -151,6 +172,7 @@ input[type=search]::placeholder {
     transition: var(--timeTransition) ease-in;
 }
 
+/* Configura el círculo superior en el icono de la alarma */
 #divIdCircle{
     position:absolute;
     top:2px;
@@ -162,16 +184,19 @@ input[type=search]::placeholder {
     background-color: var(--colorCircle);
 }
 
+/* Establece la posicion del icono de la alarma */
 #divIdContAlarm a{
     position: absolute;
     top: 8px;
 }
 
+/* Dá un ancho y alto a la imagen de usuario/avatar para que no desborde de la barra de menú */
 #aImgImgUsr{
     height: 50%;
     width: 10%;
 }
 
+/* Configura la imagen del usuario/avatar */
 #imgImgUsr{
     width: 30px;
     height: 30px;
@@ -185,6 +210,7 @@ input[type=search]::placeholder {
     border: 2px solid var(--colorSecond);
 }
 
+/* Animacion/efecto sobre la imagen/avatar */
 #imgImgUsr:hover{
     transform: scale(var(--scaleExp));
     border: 2px solid var(--colorMain);

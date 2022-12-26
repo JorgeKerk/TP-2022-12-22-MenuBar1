@@ -2,13 +2,16 @@
 
 <h2>Descripción</h2>
 
-Esta es una barra de menú solo con **HTML** y estilos **CSS** 
-
+Esta es una barra de menú solo con **HTML** y estilos **CSS**. 
+Se aplicó estilos y animación solo por CSS, logrando el siguente resultado:
 ![Alt text](images/MenuBarExample.png)
+<br>
 
-Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declaradas en el archivo styles.css pra cambiar a su necesidad el color y las imágenes de la barra de menú.
+**Puede personalizar la barra de menú a su gusto**
 
-<u><i>Variables que puede cambiar en el CSS para dar estilo a su barra de menú</i></u>
+Ademas de poder descargar este repositorio y modificar el codigo para obtener el resultado que desee. Puede cambiar algunas variables declaradas en el inicio del archivo <i>styles.css</i> para cambiar a su necesidad el color y las imágenes de la barra de menú.
+
+<i>Variables que puede cambiar en el CSS para dar estilo a su barra de menú</i>
 <ul>
     <li><strong>--colorFont:</strong> Color de todas las fuentes de la barra de menú.</li>
     <li><strong>--colorMain:</strong> Color de los efectos en la barra de menú..</li>
@@ -19,10 +22,14 @@ Se aplicó estilos y animación por CSS. Puede cambiar algunas variables declara
 </ul>
 
 El resto de las variables se recomienda no actualizarlas para no estropear el diseño de la barra de menú.
+
 <br>
 
-Link para poder ver el resultado del código en este repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/">**Barra de Menú I**</a>
+<h2>Link</h2> 
 
+Acceso directo a la página web del repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/">**Barra de Menú I**</a>
+
+<br>
 <hr>
 
-Espero que sea de su agrado, saludos cordiales <i>**JORGE KERK**</i>.
+Espero que sea de su agrado, saludos cordiales, <i>**JORGE KERK**</i>.
