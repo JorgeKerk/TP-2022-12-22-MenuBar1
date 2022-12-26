@@ -25,7 +25,7 @@ El resto de las variables se recomienda no actualizarlas para no estropear el di
 
 <h2>Link</h2> 
 
-Acceso directo a la página web del repositorio: <a class="aClassMovLeft expand" href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/">**Barra de Menú I**</a>
+Acceso directo a la página web del repositorio: <a href="https://jorgekerk.github.io/TP-2022-12-22-MenuBar1/">**Barra de Menú I**</a>
 
 <hr>
 
